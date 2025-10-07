@@ -1,27 +1,29 @@
-<!-- fichier: chat_twitch.html -->
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Twitch</title>
     <style>
       html, body {
-        height: 100%;
-      }
-      
-      body {
         margin: 0;
         padding: 0;
-        overflow: hidden;
+        height: 100%;
         background: #0e0e10;
+        overflow: hidden;
+      }
+      iframe {
+        display: block;
+        border: none;
+        width: 100%;
+        height: 100vh; /* ✅ pleine hauteur de l’écran visible */
       }
     </style>
   </head>
   <body>
     <iframe
       src="https://www.twitch.tv/embed/heddicmi/chat?parent=heddicmi.github.io"
-      height="100%"
-      width="100%"
-      frameborder="0"
-      scrolling="no">
+      allowfullscreen>
     </iframe>
   </body>
 </html>
